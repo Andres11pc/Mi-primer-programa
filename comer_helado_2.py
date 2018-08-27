@@ -1,6 +1,4 @@
-
-
-apetece_helado_input = input('¿Te apetece un helado? (Si / No): ').upper()
+apetece_helado_input = input('¿Queres tomar un helado? (Si / No): ').upper()
 
 if apetece_helado_input == 'SI':
     apetece_helado = True
@@ -20,7 +18,7 @@ else:
     print('Te he dicho que me digas si o no, no se que has dicho pero cuento como que no')
     tiene_dinero = False
 
-esta_el_senor_helados_input = input('¿Esta de señor de los helados? (Si / No): ').upper()
+esta_el_senor_helados_input = input('¿Esta la heladeria abrierta? (Si / No): ').upper()
 
 if esta_el_senor_helados_input == 'SI':
     esta_el_senor_helados = True
@@ -45,7 +43,6 @@ esta_el_senor_helados = esta_el_senor_helados_input == 'SI'
 
 
 if apetece_helado and puede_permitirselo and esta_el_senor_helados:
-    print('Pues comete un helado')
+    print('Entonces comoete un helado bien rico')
 else:
-    print('Pues nada')
-
+    print('Mala suerte, te quedas sin helado')
